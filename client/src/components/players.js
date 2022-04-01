@@ -32,10 +32,12 @@ function Players() {
     return (
       <div className="players">
         <h2> List of Players </h2>
-        <ul>
+        <ol>
             {players.map(player =>
                 <li key={player.id}> {player.firstname} {player.lastname} {player.username}</li>)}
-        </ul>
+                  
+
+        </ol>
         <Form addplayer={addplayer} />
       </div>
     );

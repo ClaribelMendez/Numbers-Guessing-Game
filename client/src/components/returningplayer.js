@@ -1,22 +1,20 @@
 
 
 
-// function Login(props) {
+// function ReturningPlayer(props) {
 
 // <form onSubmit={handleSubmit}>
-//             <fieldset>
-//                 <label>First Name</label>
+//                 <label>Username</label>
 //                 <input
 //                     type="text"
-//                     id="add-user-name"
-//                     placeholder="First Name"
+//                     id="add-user-username"
+//                     placeholder="Username"
 //                     required
-//                     value={player.firstname}
+//                     value={player.username}
 //                     onChange={handleNameChange}
-//                     </fieldset>
-
+//                     />
 //                 </form>
 // }
 
 
-// export default Login
+// export default ReturningPlayer

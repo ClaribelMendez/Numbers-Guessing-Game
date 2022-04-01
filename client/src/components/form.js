@@ -48,7 +48,7 @@ const Form = (props) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form type = 'reset' onSubmit={handleSubmit}>
             <fieldset>
                 <label>First Name</label>
                 <input
