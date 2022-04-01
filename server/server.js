@@ -49,3 +49,15 @@ app.post('/api/players', cors(), async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 });
+
+
+
+app.get('/api/scores', cors(), async (req, res) => {
+
+    try{
+        const { rows: scores } = await db.query('SELECT * FROM players ORDER BY score DESC LIMIT 3');
+        res.send(scores);
+    } catch (e){
+        return res.status(400).json({e});
+    }
+});
