@@ -12,15 +12,17 @@ function Game() {
     const handleGuessInput = (event) => {
         const guess = event.target.value;
         setGuess(guess) ;
+        console.log("this is the guess", guess)
     }
 
     const handleSubmit = event => {
+        console.log("from handleSubmit", guess, number)
         event.preventDefault();
-
-        if({guess} === number){
+        let numGuess = Number(guess)
+        if(numGuess === number){
             alert('YOU WON!')
             setCount(count + 1)
-            setNumber(Math.floor(Math.random() * (20 - 1) + 1))
+            // setNumber(Math.floor(Math.random() * (20 - 1) + 1))
         }else(alert('WRONG!'))
             setCount(count - 1)
 
@@ -44,7 +46,7 @@ function Game() {
                     placeholder="Enter a number"
                     required
                     value={guess}
-                    onChange={handleGuessInput} />
+                    onChange = {handleGuessInput} />
                 <button type="submit">Add</button>
 
             </form>

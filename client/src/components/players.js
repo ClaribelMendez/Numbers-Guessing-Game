@@ -34,7 +34,7 @@ function Players() {
         <h2> List of Players </h2>
         <ol>
             {players.map(player =>
-                <li key={player.id}> {player.firstname} {player.lastname} {player.username}</li>)}
+                <li key={player.id}> {player.firstname} {player.lastname} {player.username} </li>)}
                   
 
         </ol>
